@@ -219,7 +219,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Vfj-8h-5QN"/>
                                 </constraints>
-                                <state key="normal" title="Calcola">
+                                <state key="normal" title="Calcola Valori">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
