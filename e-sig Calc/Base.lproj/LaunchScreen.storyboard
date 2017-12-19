@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,21 +24,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-Sig Calc" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2gB-cT-U4s">
-                                <rect key="frame" x="10" y="255.5" width="355" height="156"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appImg" translatesAutoresizingMaskIntoConstraints="NO" id="fZ2-Mb-Gke">
+                                <rect key="frame" x="67" y="247" width="241" height="213"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="156" id="k7D-5P-xce"/>
+                                    <constraint firstAttribute="width" secondItem="fZ2-Mb-Gke" secondAttribute="height" multiplier="60:53" id="fym-rT-alk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-Sig Calc" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2gB-cT-U4s">
+                                <rect key="frame" x="10" y="148" width="355" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="k7D-5P-xce"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2gB-cT-U4s" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bYN-Zb-xOd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZ2-Mb-Gke" secondAttribute="trailing" constant="67" id="Gb3-Fb-bWx"/>
+                            <constraint firstItem="fZ2-Mb-Gke" firstAttribute="top" secondItem="2gB-cT-U4s" secondAttribute="bottom" id="MeY-b6-NKA"/>
+                            <constraint firstItem="fZ2-Mb-Gke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="eUU-7d-7zB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gB-cT-U4s" secondAttribute="trailing" constant="10" id="iXj-Tg-NND"/>
                             <constraint firstItem="2gB-cT-U4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vj2-QJ-ZxU"/>
+                            <constraint firstItem="fZ2-Mb-Gke" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="20" id="xJ7-Vq-bOe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -47,4 +57,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appImg" width="256" height="256"/>
+    </resources>
 </document>
