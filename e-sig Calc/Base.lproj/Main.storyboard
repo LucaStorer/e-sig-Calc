@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Calc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerCalc" customModule="e_sig_Calc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,6 +227,9 @@
                                 <state key="normal" title="Calcola">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="CmdResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwb-Kz-Hn6"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="as7-3X-z1i">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -261,6 +264,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Txt_mg_1" destination="FOk-Ah-cj7" id="qrQ-wm-ZJA"/>
+                        <outlet property="Txt_mg_2" destination="Vkb-oK-n9g" id="32R-1i-pmC"/>
+                        <outlet property="Txt_mg_3" destination="z1f-DF-alk" id="fzg-EC-SOZ"/>
+                        <outlet property="Txt_ml_1" destination="fq7-2U-vDs" id="geJ-s5-f96"/>
+                        <outlet property="Txt_ml_2" destination="9yu-hh-GiB" id="u8g-6G-kb6"/>
+                        <outlet property="Txt_ml_3" destination="Gcd-hl-5fZ" id="cCY-Bc-aKg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
